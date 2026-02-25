@@ -63,8 +63,8 @@ export default function ContactPage() {
                 copiedLabel="Copied"
                 successMessage="Discord handle copied to clipboard."
               />
-              <ButtonLink href="https://discord.com/app" variant="secondary" external>
-                Open Discord
+              <ButtonLink href="https://discord.com/users/945500602497138738" variant="secondary" external>
+                Open Profile
               </ButtonLink>
             </div>
           </div>
