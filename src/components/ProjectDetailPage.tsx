@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import type { ProjectEntry } from "@/content/siteData";
+import { withBasePath } from "@/lib/basePath";
 import { cn } from "@/lib/utils";
 
 import { ButtonLink } from "./ButtonLink";
@@ -61,7 +62,7 @@ export function ProjectDetailPage({ project }: ProjectDetailPageProps) {
           )}
         >
           <Image
-            src={project.heroImage}
+            src={withBasePath(project.heroImage)}
             alt={`${project.title} preview`}
             fill
             className="object-cover transition duration-500 ease-out motion-reduce:transition-none"

@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import type { ProjectEntry } from "@/content/siteData";
+import { withBasePath } from "@/lib/basePath";
 
 import { ButtonLink } from "./ButtonLink";
 import { Tag } from "./Tag";
@@ -15,7 +16,7 @@ export function ProjectCard({ project, priority = false }: ProjectCardProps) {
     <article className="surface interactive-card group flex h-full flex-col overflow-hidden">
       <div className="relative h-44 w-full overflow-hidden border-b border-edge sm:h-48">
         <Image
-          src={project.heroImage}
+          src={withBasePath(project.heroImage)}
           alt={`${project.title} project preview`}
           fill
           priority={priority}

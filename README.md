@@ -132,6 +132,22 @@ Set `siteData.site.url` in `src/content/siteData.ts` to your actual site origin:
 - `https://username.github.io` for user/org pages
 - `https://username.github.io` plus `NEXT_PUBLIC_BASE_PATH=repo-name` for project pages
 
+### Troubleshooting: Images Not Loading on GitHub Pages
+
+If your site loads but project images are blank, the export was likely built with the wrong base path.
+
+- For repo pages (`https://username.github.io/repo-name`), rebuild with:
+
+```bash
+NEXT_PUBLIC_BASE_PATH=repo-name npm run build
+```
+
+- For custom domains at root (for example `https://00202210.dev`), rebuild with:
+
+```bash
+NEXT_PUBLIC_BASE_PATH= npm run build
+```
+
 ## Cloudflare Pages + Custom Domain
 
 1. Build the static export with no base path:
