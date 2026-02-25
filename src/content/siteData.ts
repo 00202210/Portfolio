@@ -34,7 +34,7 @@ export const siteData = {
   profile: {
     handle: "00202210",
     displayName: "00202210",
-    headline: "Roblox Scripter (Luau) building scalable gameplay and backend systems",
+    headline: "Roblox Scripter building scalable gameplay and backend systems",
     availability: "Open to studio and long-term contract opportunities",
     location: "Remote",
     yearsActive: "3+ years scripting in Roblox ecosystem",
