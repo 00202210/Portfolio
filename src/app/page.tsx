@@ -10,7 +10,7 @@ export const metadata = createPageMetadata({
   path: "/",
 });
 
-const featuredProjectSlugs = new Set(["immortal-cultivation", "unlimited", "chattowebhook"]);
+const featuredProjectSlugs = new Set(["immortal-cultivation", "unlimited", "cutesignal"]);
 const featuredProjects = projects.filter((project) => featuredProjectSlugs.has(project.slug));
 
 export default function HomePage() {
