@@ -33,7 +33,7 @@ export default function HomePage() {
         <div className="mt-7 flex flex-wrap gap-2.5">
           <ButtonLink href="/projects">Explore projects</ButtonLink>
           <ButtonLink href="/contact" variant="secondary">
-            Contact on Discord
+            Contact Me!
           </ButtonLink>
         </div>
 

@@ -77,7 +77,7 @@ export default function AboutPage() {
           codebases organized for handoff and collaboration, and I optimize for long-term maintainability.
         </p>
         <div className="mt-5">
-          <ButtonLink href="/contact">Contact Me</ButtonLink>
+          <ButtonLink href="/contact">Contact Me!</ButtonLink>
         </div>
       </section>
     </div>
