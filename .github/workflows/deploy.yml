@@ -17,6 +17,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_BASE_PATH: ${{ vars.NEXT_PUBLIC_BASE_PATH || github.event.repository.name }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -35,8 +37,15 @@ jobs:
 
       - name: Build static export
         run: npm run build
-        env:
-          NEXT_PUBLIC_BASE_PATH: ${{ github.event.repository.name }}
+
+      - name: Verify image URLs in export
+        run: |
+          if [ -n "$NEXT_PUBLIC_BASE_PATH" ]; then
+            if grep -R 'src="/images/projects/' out >/dev/null || grep -R 'href="/images/projects/' out >/dev/null; then
+              echo "Found image URLs missing base path in exported HTML."
+              exit 1
+            fi
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
