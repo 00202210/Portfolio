@@ -1,0 +1,16 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F1C31"/>
+      <stop offset="1" stop-color="#2A527F"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1020 120) rotate(145) scale(560 360)">
+      <stop stop-color="#8FB7E8" stop-opacity="0.48"/>
+      <stop offset="1" stop-color="#8FB7E8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <text x="88" y="340" fill="#F2F8FF" font-size="74" font-family="Arial, sans-serif" font-weight="700">00202210</text>
+  <text x="88" y="410" fill="#D6E6FA" font-size="36" font-family="Arial, sans-serif">Roblox Luau Scripter Portfolio</text>
+</svg>
